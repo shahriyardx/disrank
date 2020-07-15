@@ -1,3 +1,6 @@
 draft.py
 __pychache__/
 test.py
+disrank.egg-info/
+build/
+dist/
