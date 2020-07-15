@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: disrank
+Version: 0.0.2
+Summary: A lib
+Home-page: https://github.com/shahprog/disrank/
+Author: Md Shahriyar Alam
+Author-email: mdshahriyaralam552@gmail.com
+License: MIT
+Description: # Disrank
+        A lib to make good looking discord profile card
+        
+        # Usage
+        ```py
+        from disrank.generator import Generator
+        
+        args = {
+        	'bg_image' : '', # Background image link 
+        	'profile_image' : '', # User profile picture link
+        	'level' : 1, # User current level 
+        	'current_xp' : 0, # Current level minimum xp 
+        	'user_xp' : 10, # User current xp
+        	'next_xp' : 100, # xp required for next level
+        	'user_position' : 1, # User position in leaderboard
+        	'user_name' : 'Name#0001', # user name with descriminator 
+        	'user_status' : 'online', # User status eg. online, offline, idle, streaming, dnd
+        }
+        
+        image = Generator().generate_profile(**args)
+        
+        # In a discord command
+        file = discord.File(fp=image, filename='image.png')
+        await ctx.send(file=file)
+        ```
+        
+        Make sure to run the generate part in an executor. 
+        Any help need [Join here](https://discord.gg/7SaE8v2)
+Keywords: discord discord-rank discord-profile discord-leveling
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
