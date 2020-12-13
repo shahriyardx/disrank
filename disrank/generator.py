@@ -75,7 +75,7 @@ class Generator:
 
         # ======== Colors ========================
         WHITE = (189, 195, 199)
-        DARK = (252, 179, 63)
+        DARK = (110 151 241)
         YELLOW = (255, 234, 167)
 
         def get_str(xp):
