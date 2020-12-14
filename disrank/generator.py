@@ -63,7 +63,7 @@ class Generator:
         mask = Image.new("RGBA", card.size, 0)
         mask_draw = ImageDraw.Draw(mask)
         mask_draw.ellipse(
-            (44, 44, 109, 109), fill=(255, 25, 255, 255)
+            (63.4, 37, 155, 155), fill=(255, 25, 255, 255)
         )  # The part need to be cropped
 
         # Editing stuff here
