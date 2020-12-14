@@ -56,14 +56,14 @@ class Generator:
         status = status.convert("RGBA").resize((40,40))
 
         profile_pic_holder = Image.new(
-            "RGBA", card.size, (255, 255, 255, 0)
+            "RGBA", card.size, (155, 155, 155, 0)
         )  # Is used for a blank image so that i can mask
 
         # Mask to crop image
         mask = Image.new("RGBA", card.size, 0)
         mask_draw = ImageDraw.Draw(mask)
         mask_draw.ellipse(
-            (29, 29, 209, 209), fill=(255, 25, 255, 255)
+            (63.4, 37, 155, 155), fill=(255, 25, 255, 255)
         )  # The part need to be cropped
 
         # Editing stuff here
