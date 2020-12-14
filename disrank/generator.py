@@ -56,7 +56,7 @@ class Generator:
         status = status.convert("RGBA").resize((40,40))
 
         profile_pic_holder = Image.new(
-            "RGBA", card.size, (255, 255, 255, 0)
+            "RGBA", card.size, (155, 155, 155, 0)
         )  # Is used for a blank image so that i can mask
 
         # Mask to crop image
